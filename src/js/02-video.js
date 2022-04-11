@@ -6,7 +6,7 @@ const STORAGE_KEY = 'videoplayer-current-time';
 const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
 
-let throttledTimeUpdate = throttle(timeUpdate, 1000, { trailing: false });
+const throttledTimeUpdate = throttle(timeUpdate, 1000, { trailing: false });
 
 function onPlay() {
   console.log('played the video!');
