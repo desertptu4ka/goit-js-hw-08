@@ -4,7 +4,7 @@ const STORAGE_KEY = 'feedback-form-state'; //localStorage.getItem('feedback-form
 
 const form = document.querySelector('.feedback-form');
 
-const throttledSmthChange = throttle(smthChange, 500);
+const throttledSmthChange = throttle(smthChange, 500, { trailing: false });
 
 //there will be saved text from 'form'
 //and than, currentData will be saved in local storage
