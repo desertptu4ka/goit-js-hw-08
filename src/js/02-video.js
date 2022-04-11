@@ -10,7 +10,6 @@ let throttledTimeUpdate = throttle(timeUpdate, 1000, { trailing: false });
 
 function onPlay() {
   console.log('played the video!');
-  player.on('timeupdate', throttledTimeUpdate);
 }
 
 function onPause() {
@@ -24,6 +23,7 @@ function timeUpdate({ seconds }) {
 
 player.on('pause', onPause);
 player.on('play', onPlay);
+player.on('timeupdate', throttledTimeUpdate);
 
 //after reload page
 
@@ -38,7 +38,7 @@ function continuePLay() {
                 <span>Would you like to conitnue wathing video from ${seconds} seconds?</span>
                 <div id="modal--buttons">
                     <button class="button-5" data-answer="false">No way!</button>
-                    <button class="button-5" data-answer="true">Ofcourse!</button>
+                    <button class="button-5" data-answer="true">Of course!</button>
                 </div>
             </div>
         </div>`;
