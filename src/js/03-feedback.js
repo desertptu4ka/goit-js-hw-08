@@ -7,12 +7,12 @@ const form = document.querySelector('.feedback-form');
 const throttledSmthChange = throttle(smthChange, 500, { trailing: false });
 
 //there will be saved text from 'form'
-//and than, currentData will be saved in local storage
+//and than, currentData will be saved in the local storage
 let currentData;
 
 function smthChange() {
-  const el = event.target;
-  currentData[el.name] = el.value;
+  const { name, value } = event.target;
+  currentData[name] = value;
 
   updateLocalStorage();
 }
