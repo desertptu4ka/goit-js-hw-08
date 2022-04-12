@@ -35,7 +35,7 @@ function continuePLay() {
         <div class="modal--bg">
             <div class="modal--window">
                 <h3>Wellcome!</h3>
-                <span>Would you like to conitnue wathing video from ${seconds} seconds?</span>
+                <span>Would you like to continue wathing video from ${seconds} seconds?</span>
                 <div id="modal--buttons">
                     <button class="button-5" data-answer="false">No way!</button>
                     <button class="button-5" data-answer="true">Of course!</button>
@@ -86,6 +86,7 @@ style.innerHTML = `.modal--bg {background: linear-gradient(0deg, rgba(255, 255, 
     flex-direction: column;
     align-items: center;
     color: #fb8332;
+    text-align: center;
   }
 
 .button-5 {
