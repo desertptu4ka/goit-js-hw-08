@@ -45,7 +45,6 @@ function submitForm() {
   }
   //end validator
 
-  event.preventDefault();
   localStorage.removeItem(STORAGE_KEY);
   console.log(currentData);
   event.target.reset();
