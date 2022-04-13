@@ -3,7 +3,7 @@
   --animation-duration: 250ms;
 }
 
-@import "simplelightbox/dist/simple-lightbox.min.css";
+/* @import "simplelightbox/dist/simple-lightbox.min.css"; */
 
 .gallery {
   display: grid;

@@ -3,8 +3,7 @@ import throttle from 'lodash.throttle';
 
 const STORAGE_KEY = 'videoplayer-current-time';
 
-const iframe = document.querySelector('iframe');
-const player = new Player(iframe);
+const player = new Player('vimeo-player');
 
 const throttledTimeUpdate = throttle(timeUpdate, 1000, { trailing: false });
 

@@ -29,6 +29,7 @@
     "@vimeo/player": "^2.16.4",
     "basiclightbox": "^5.0.4",
     "lodash.throttle": "^4.1.1",
-    "simplelightbox": "^2.10.3"
+    "simplelightbox": "^2.10.3",
+    "validator": "^13.7.0"
   }
 }
